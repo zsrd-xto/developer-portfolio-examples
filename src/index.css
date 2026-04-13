@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+/* AGENTS.md：深色主题基色与强调渐变，供组件与 @apply 使用 */
+@theme {
+  --color-portfolio-bg: #0a0a0a;
+  --color-portfolio-fg: #ffffff;
+  --color-portfolio-muted: #a3a3a3;
+  --color-portfolio-border: #262626;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply m-0 min-h-svh bg-portfolio-bg text-portfolio-fg antialiased;
+}
